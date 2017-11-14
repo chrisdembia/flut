@@ -62,7 +62,7 @@ namespace flut
 		const T& operator()( const L& label ) const { return *this( find_channel( label ) ); }
 
 		/// get access to the data in a specific frame (DO WE NEED THIS?)
-		const T* get_frame( index_t frame = frame_size() - 1 )
+		const T* get_frame( index_t frame /*= frame_size() - 1*/ )
 		{ flut_assert( frame < frame_size() ); return &data_[ frame * this->channel_size() ]; }
 
 		/// get the interpolated value of a specific frame / channel

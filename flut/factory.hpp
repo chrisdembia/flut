@@ -2,6 +2,7 @@
 
 #include <functional>
 #include <memory>
+#include <string>
 #include "system/assert.hpp"
 #include "system/platform.hpp"
 #include "flat_map.hpp"
